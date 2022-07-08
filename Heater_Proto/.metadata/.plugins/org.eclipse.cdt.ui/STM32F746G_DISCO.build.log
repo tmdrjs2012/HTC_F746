@@ -1,0 +1,33 @@
+13:00:12 **** Incremental Build of configuration Debug for project STM32F746G_DISCO ****
+make -j16 all 
+arm-none-eabi-gcc "C:/Users/hc.ro/Desktop/MY_PROJECT/_BackFile/backup_heatproto/complete_File/Heater_Proto/Heater_Proto/Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../../Core/Inc -I../../TouchGFX/App -I../../TouchGFX/target/generated -I../../TouchGFX/target -I../../Drivers/STM32F7xx_HAL_Driver/Inc -I../../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Drivers/BSP/STM32746G-Discovery -I../../Drivers/BSP/Components/ft5336 -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Application/User/Core/stm32f7xx_it.d" -MT"Application/User/Core/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/stm32f7xx_it.o"
+C:/Users/hc.ro/Desktop/MY_PROJECT/_BackFile/backup_heatproto/complete_File/Heater_Proto/Heater_Proto/Core/Src/stm32f7xx_it.c: In function 'TIM3_IRQHandler':
+C:/Users/hc.ro/Desktop/MY_PROJECT/_BackFile/backup_heatproto/complete_File/Heater_Proto/Heater_Proto/Core/Src/stm32f7xx_it.c:272:10: warning: type defaults to 'int' in declaration of '_pid_count' [-Wimplicit-int]
+  272 |   static _pid_count;   // pid timer count
+      |          ^~~~~~~~~~
+C:/Users/hc.ro/Desktop/MY_PROJECT/_BackFile/backup_heatproto/complete_File/Heater_Proto/Heater_Proto/Core/Src/stm32f7xx_it.c:272:10: warning: unused variable '_pid_count' [-Wunused-variable]
+C:/Users/hc.ro/Desktop/MY_PROJECT/_BackFile/backup_heatproto/complete_File/Heater_Proto/Heater_Proto/Core/Src/stm32f7xx_it.c: In function 'caliVal':
+C:/Users/hc.ro/Desktop/MY_PROJECT/_BackFile/backup_heatproto/complete_File/Heater_Proto/Heater_Proto/Core/Src/stm32f7xx_it.c:407:1: warning: control reaches end of non-void function [-Wreturn-type]
+  407 | }
+      | ^
+At top level:
+C:/Users/hc.ro/Desktop/MY_PROJECT/_BackFile/backup_heatproto/complete_File/Heater_Proto/Heater_Proto/Core/Src/stm32f7xx_it.c:272:10: warning: '_pid_count' defined but not used [-Wunused-variable]
+  272 |   static _pid_count;   // pid timer count
+      |          ^~~~~~~~~~
+arm-none-eabi-g++ -o "STM32F746G_DISCO.elf" @"objects.list"  -l:libtouchgfx-float-abi-hard.a -mcpu=cortex-m7 -T"C:\Users\hc.ro\Desktop\MY_PROJECT\_BackFile\backup_heatproto\complete_File\Heater_Proto\Heater_Proto\STM32CubeIDE\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F746G_DISCO.map" -Wl,--gc-sections -static -LC:/Dev/STM32F746-DISCO/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -L"C:\Users\hc.ro\Desktop\MY_PROJECT\_BackFile\backup_heatproto\complete_File\Heater_Proto\Heater_Proto\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" -LC:/git/STM32F746-dk/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/Users/hc.ro/Desktop/MY_PROJECT/Heater_Proto/Heater_Proto/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/Users/hc.ro/Desktop/MY_PROJECT/Heater_Proto/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/Users/hc.ro/Desktop/MY_PROJECT/complete_File/Heater_Proto/Heater_Proto/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32F746G_DISCO.elf
+ 
+arm-none-eabi-size   STM32F746G_DISCO.elf 
+arm-none-eabi-objdump -h -S  STM32F746G_DISCO.elf  > "STM32F746G_DISCO.list"
+arm-none-eabi-objcopy  -O ihex  STM32F746G_DISCO.elf  "STM32F746G_DISCO.hex"
+   text	   data	    bss	    dec	    hex	filename
+ 386332	    336	  63672	 450340	  6df24	STM32F746G_DISCO.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F746G_DISCO.hex
+ 
+Finished building: STM32F746G_DISCO.list
+ 
+
+13:00:14 Build Finished. 0 errors, 4 warnings. (took 2s.695ms)
+

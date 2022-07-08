@@ -1,0 +1,19 @@
+!SESSION 2022-02-09 17:56:09.301 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\hc.ro\Desktop\MY_PROJECT\complete_File\Heater_Proto\Heater_Proto\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\hc.ro\Desktop\MY_PROJECT\complete_File\Heater_Proto\Heater_Proto\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-02-09 17:57:24.235
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-02-09 17:57:24.291
+!MESSAGE Log4j initialized with config file C:\Users\hc.ro\Desktop\MY_PROJECT\complete_File\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-02-09 17:57:26.916
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-09 17:57:37.435
+!MESSAGE Indexed 'STM32F746G_DISCO' (107 sources, 342 headers) in 8.3 sec: 26,158 declarations; 99,579 references; 6 unresolved inclusions; 134 syntax errors; 1,976 unresolved names (1.5%)
